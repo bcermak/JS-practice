@@ -34,12 +34,30 @@ const companies = [
 const canDrink = ages.filter(age => age >= 21);
 
 // filter retail companies
+// const isRetail = companies.filter(function(company) {
+// if (company.category === "Retail") {
+//      return true;   
+// }
+// });
 
 const isRetail = companies.filter(company => company.category === "Retail");
 
-console.log(isRetail);
+// console.log(isRetail);
+
+// started in 80s
+const fromEighties = companies.filter(company => (company.start >= 1980 && company.start < 1990));
+
+// console.log(fromEighties)
+
+// companies lasted 10 years
+const decade = companies.filter(company => (company.end - company.start >= 10))
+
+// console.log(decade)
 
 // MAP
+const companyNames = companies.map(company => company.name)
+
+console.log(companyNames)
 
 // SORT 
 
