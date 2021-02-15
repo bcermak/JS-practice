@@ -20,6 +20,8 @@ function addInput () {
 }
 
 addInput ();
+// work on mapping array 
+// const array = ["1", "2", "3", "4"]
 
 function addBtn () {
     let btn = document.createElement('button');
