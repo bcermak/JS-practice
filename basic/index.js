@@ -1,3 +1,5 @@
+document.body.setAttribute('style', "background-color: lightpink")
+
 const header = document.querySelector('h2');
 
 header.style = 'text-align: center;'
