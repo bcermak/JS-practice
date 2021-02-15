@@ -12,16 +12,35 @@ const companies = [
   
   const ages = [33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32];
 
-  for(let i = 0; i < companies.length; i++) {
-      console.log(companies[i]);
-  };
+//for loop for reference 
+//   for(let i = 0; i < companies.length; i++) {
+//       console.log(companies[i]);
+//   };
 
-// forEach
+// FOREACH
+// companies.forEach(company => {
+//     console.log(company.name)
+// });
 
-// filter
+// FILTER
+// filter ages that can drink
+// const canDrink = ages.filter(age => {
+//     if(age >= 21) {
+//         // canDrink.push(age) --- don't need if using FILTER
+//         return true;
+//     }   
+// });
+//cleaner version
+const canDrink = ages.filter(age => age >= 21);
 
-// map 
+// filter retail companies
 
-// sort 
+const isRetail = companies.filter(company => company.category === "Retail");
 
-// reduce
+console.log(isRetail);
+
+// MAP
+
+// SORT 
+
+// REDUCE
