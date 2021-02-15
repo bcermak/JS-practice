@@ -25,7 +25,14 @@ function addBtn () {
     let btn = document.createElement('button');
     btn.className = 'btn btn-primary';
     btn.innerHTML = "Hello World";
-    btn.setAttribute('style', "margin-left: 10px;")
+    btn.setAttribute('style', "margin-left: 10px;");
+    btn.addEventListener('click', function () {
+        alert("Herro World");
+        console.log("Herro World");
+        let par = document.createElement('p');
+        par.innerHTML = "Hello World";
+        newDiv.appendChild(par);
+    })
     newDiv.appendChild(btn);
 };
 
