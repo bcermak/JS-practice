@@ -21,10 +21,9 @@ onload = getName()
 function getName() {
 let name = prompt("What's your name?");
 let h2 = document.createElement("h2");
-
 document.getElementById("div").append(h2);
 h2.innerText = "Hello, " + name + "! Welcome!!"
-
+h2.setAttribute("style", "text-align: center; color: Blue; background-color:red");
 }
 
 </script>
